@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(51, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1{
+    border: .2rem solid rgb(30, 29, 29);
+    background-color: rgb(52, 49, 49);
+    box-shadow: 0 .5rem 1rem rgba(11, 11, 11, .7);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 28rem;
+    height: 31rem;
+    border-radius: .9rem;
+    position: fixed;
+    z-index: 1;
+}
+.div1 img{
+    width: 12rem;
+    height: 12rem;
+    /* margin: 2rem; */
+    border-radius: 50rem;
+}
+.heading{
+    font-family: sans-serif;
+    color: aliceblue;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+.text{
+    font-family: sans-serif;
+    color: aliceblue;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 1.3rem;
+}
+.div2{
+    margin-top: 2.9rem;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 0.7rem;
+}
+.div2 .btn{
+    background-color: rgb(33, 31, 31);
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    width: 11rem;
+    height: 2.9rem;
+    border: .2rem solid rgb(46, 43, 43);
+    border-radius: .4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.div2 .btn:hover{
+    background-color: aliceblue;
+    color: rgb(33, 31, 31);
+}
+.model{
+    color: aliceblue;
+    width: 35rem;
+    height: 16rem;
+    background-color: black;
+    position: fixed;
+    border: .2rem solid rgb(91, 89, 89);
+    z-index: 1;
+    border-radius: 1rem;
+    opacity: 0.9;
+    scale: 0;
+    transition: .5s ease-in-out;
+}
+.active{
+    scale: 1;
+}
+.model .share{
+    display: flex;
+    gap: 15rem;
+    padding: 1.3rem 0rem 0rem 1.4rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.model .share i:hover{
+    color: brown;
+}
+.model .line{
+    border: .1rem solid rgb(91, 89, 89);
+    width: 31rem;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
+}
+.model p{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding: 1.8rem 0rem 0rem 1.4rem;
+    color: aliceblue;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.8rem;
+    gap: 2.8rem;
+}
+.icon a i{
+    width: 4rem;
+    height: 4rem;
+    border: .2rem solid rgb(91, 89, 89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+.icon a{
+    text-decoration: none;
+}
+.icon #a{
+    border-color: rgb(95, 4, 34);
+    color: rgb(95, 4, 34);
+    /* text-decoration: none; */
+}
+.icon a #b{
+    border-color: rgb(18, 82, 18);
+    color: rgb(18, 82, 18) ;
+}
+.icon a #c{
+    border-color: rgb(79, 89, 227);
+    color: rgb(79, 89, 227);
+}
+.icon a #d{
+    border-color: rgb(126, 146, 146);
+    color: rgb(126, 146, 146);
+}
+.icon a #e{
+    border-color: rgb(5, 53, 72);
+    color: rgb(5, 53, 72);
+}
+.icon a #a:hover{
+    background-color:  rgb(95, 4, 34);
+    color: rgb(125, 144, 161);
+}
+.icon a #b:hover{
+    background-color:  rgb(18, 82, 18);
+    color: rgb(125, 144, 161);
+}
+.icon a #c:hover{
+    background-color:  rgb(79, 89, 227);
+    color: rgb(125, 144, 161);
+}
+.icon a #d:hover{
+    background-color:  rgb(126, 146, 146);
+    color: rgb(20, 38, 53);
+}
+.icon a #e:hover{
+    background-color:  rgb(5, 53, 72);
+    color: rgb(105, 98, 98);
+}
+.overlay{
+    position: fixed;
+    background-color: rgb(43, 40, 40);
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: .5s ease-in-out;
+}
+.overlayactive{
+    opacity: 1;
+    pointer-events: initial;
+} 

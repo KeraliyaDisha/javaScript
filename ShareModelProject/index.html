@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareModel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="div1">
+        <div class="profile">
+            <img src="images/img1.jpg" alt="">
+        </div>
+        <div class="heading">disha keraliya</div>
+        <div class="text">student, VGEC</div>
+        <div class="div2">
+            <button  onclick="openModel()" class ="btn"><i class="fa-solid fa-share"></i> share my profile</button>
+            <button class="btn">follow me</button>
+        </div>
+    </div>
+
+    <div class="model">
+        <div class="share">share my profile <i onclick="closeModel()" class="fa-solid fa-xmark"></i></div>
+        <div class="line"></div>
+        <p>share this via</p>
+        <div class="icon">
+            <a href="#"><i id="a" class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i id="b" class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i id="c" class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i id="d" class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i id="e" class="fa-brands fa-telegram"></i></a>
+        </div>
+    </div>
+
+    <div class="overlay" onclick="closeModel()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+.body{
+    background-color: rgb(60, 60, 135);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div1{
+    font-family: serif;
+    color: aliceblue;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.div2{
+    display: flex;
+    background-color: aliceblue;
+    width: 22.9rem;
+    height: 5rem;
+    margin-top: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color:rgb(47, 42, 42);
+    gap: 5.5rem;
+    border-radius: .5rem;
+}
+.div2 .btn1{
+    border-right: .2rem solid rgba(0, 0, 0, .3);
+}
+.div2 .btn2{
+    border-left: .2rem solid rgba(0, 0, 0, .3);
+}
+.div2 .btn1 i{
+    padding-right: 2rem;
+}
+.div2 .btn2 i{
+    padding-left: 2rem;
+}
